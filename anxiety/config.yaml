@@ -1,0 +1,20 @@
+belief_threshold: 0.8
+
+search_terms:
+- Anxiety
+- stress
+- Aggression
+- Depression
+#- response
+
+#search_chemicals:
+- dopamine
+- serotonin
+
+search_genes:
+- GRIN2D
+- CRHR1
+- HTR1A
+- PDYN
+- PITX3
+

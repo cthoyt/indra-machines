@@ -1,0 +1,22 @@
+belief_threshold: 0.8
+
+search_terms:
+- Anhedonia
+- motivation
+- drive
+- stress
+
+#search_chemicals:
+- dopamine
+
+search_genes:
+- CACNA1C
+- SETDB1
+- DISC1
+- CRHR1
+- COMT
+- KCNK2
+- ANK3
+- OPRK1
+- PDYN
+- PITX3

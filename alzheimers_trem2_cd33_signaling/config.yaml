@@ -1,0 +1,15 @@
+belief_threshold: 0.8
+
+search_terms_number_days: 7
+
+search_terms:
+- "inflammation"
+- "microglia"
+
+search_genes:
+- TREM2
+- CD33
+- MIF
+- VEGF
+- C3
+- CCL2

@@ -1,0 +1,95 @@
+belief_threshold: 0.8
+
+search_terms:
+- "Microglia"
+- "Amyloid Beta"
+- "Neuroinflammation"
+- "Alzheimer"
+- "Parkinson"
+- "Neurodegeneration"
+- "valproic acid"
+- "valproate"
+- "sialic acid"
+
+# Drugs from DrugBank https://www.drugbank.ca/indications/DBCOND0049114 and https://www.drugbank.ca/indications/DBCOND0050184
+- Aripiprazole
+- Galantamine
+- Olanzapine
+- Quetiapine
+- Risperidone
+- Thioridazine
+- Ziprasidone
+
+search_terms_num_days: 3
+
+search_genes:
+- APP
+- BACE1
+- MAPT
+- GSK3B
+- PSEN1
+- PPARG
+- APOE
+- IL4
+- PTPN6
+- PTPN11
+- CD14
+- CSF1R
+- IL1B
+- CDK5
+- TNF
+- NFKB1
+- AKT1
+
+# Upcoming in AD
+
+- DLK1
+- MAP3K12
+- SPI1
+- HDAC2
+- KDM1A
+- MAOB
+
+# CD33 and TREM2
+
+- TREM2
+- PTPN11
+- TYROBP
+- SYK
+- PIK3CD
+- CD33
+- KANSL1
+
+# PD
+
+- SNCA
+- LRRK2
+
+# ALS
+
+- SOD1
+- EGR1
+- GABRA1
+- GABRA2
+
+# From EP paper
+
+# - OGDH
+- HDAC1
+- HDAC9
+# - HDAC11
+# - ABAT
+# - ALDH5A1
+# - GABR
+# - CACNA1
+# - SCN10A
+# - SCN1A
+# - SCN1B
+# - SCN2A
+# - SCN9A
+# - SCN8A
+# - SCN5A
+# - SCN4A
+# - SCN3A
+# - BCL2
+# - SCN2B

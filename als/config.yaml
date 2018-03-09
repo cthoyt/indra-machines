@@ -1,0 +1,21 @@
+belief_threshold: 0.8
+
+search_terms:
+- "ALS"
+- "Amyotrophic lateral sclerosis"
+- "Muscular Atrophy, Spinal"
+- "Muscle Weakness"
+
+## biological processes
+- "Gemini of coiled bodies"
+- "RNA splicing"
+- autophagy
+- myelination
+
+search_genes:
+- SOD1
+- SOD2
+- TARDBP
+- FUS
+- C9orf72
+- SMN1
