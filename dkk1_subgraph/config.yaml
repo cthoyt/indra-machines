@@ -1,0 +1,25 @@
+belief_threshold: 0.8
+
+#search_terms:
+#- "search term 1"
+#- "search term 2"
+
+search_genes:
+- BACE1
+- GSK3B
+- MAPT
+- FOS
+- DKK1
+- NEFH
+- AKT1
+- DKK4
+- MAP2
+- APP
+- EGR1
+- NAB2
+- KLF10
+- TP53
+- DKK2
+- DKK3
+- CLU
+- WNT3A
