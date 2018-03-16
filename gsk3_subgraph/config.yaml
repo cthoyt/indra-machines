@@ -1,0 +1,52 @@
+belief_threshold: 0.8
+
+#search_terms:
+#- "search term 1"
+#- "search term 2"
+
+search_genes:
+- PSEN1
+- NFATC2
+- HSF1
+- CTNNB1
+- CCL2
+- FRAT2
+- SNCA
+- CDK5
+- DPYSL2
+- GSK3A
+- GSK3B
+- GYS1
+- NFKB1
+- CREB3L4
+- CTNNBL1
+- CCL5
+- LRP2
+- PPP1R1B
+- GCG
+- CXCL10
+- LEP
+- MYC
+- PIN1
+- BAD
+- AKT1
+- S100B
+- CTNNBIP1
+- PRKCD
+- CREBBP
+- CXCL1
+- PRKACA
+- INS
+- MTOR
+- HSPA4
+- MAPT
+- MAPK10
+- PRKACG
+- PPP2CA
+- APP
+- CASP3
+- NFE2L2
+- BTRC
+- CXCL8
+- CDK5R1
+- BAX
