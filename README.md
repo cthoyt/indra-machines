@@ -18,41 +18,41 @@ See: http://indra.readthedocs.io/en/latest/modules/tools/index.html#module-indra
 
 Example:
 
-.. code-block:: yaml
+```yaml
+belief_threshold: 0.8
+#PUBMED SEARCH TERMS ######################
+## Generic search terms
+#search_terms:
+#- "search term 1"
+#- "search term 2"
+## Gene symbol search terms
+#search_genes:
+#- AKT1
+#- EGFR
+###########################################
 
-	belief_threshold: 0.8
-	#PUBMED SEARCH TERMS ######################
-	## Generic search terms
-	#search_terms:
-	#- "search term 1"
-	#- "search term 2"
-	## Gene symbol search terms
-	#search_genes:
-	#- AKT1
-	#- EGFR
-	###########################################
 
+#GMAIL CREDENTIALS ########################
+#gmail:
+#  user: 
+#  password: 
+###########################################
 
-	#GMAIL CREDENTIALS ########################
-	#gmail:
-	#  user: 
-	#  password: 
-	###########################################
+#TWITTER CREDENTIALS ######################
+#twitter:
+#  consumer_token: 
+#  consumer_secret: 
+#  access_token: 
+#  access_secret: 
+###########################################
 
-	#TWITTER CREDENTIALS ######################
-	#twitter:
-	#  consumer_token: 
-	#  consumer_secret: 
-	#  access_token: 
-	#  access_secret: 
-	###########################################
-
-	#NDEX CREDENTIALS #########################
-	#ndex:
-	#  user: 
-	#  password: 
-	#  network: 
-	###########################################
+#NDEX CREDENTIALS #########################
+#ndex:
+#  user: 
+#  password: 
+#  network: 
+###########################################
+```
 
 ## Links
 
