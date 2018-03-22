@@ -1,5 +1,8 @@
 belief_threshold: 0.8
 
+ndex:
+	name: "Alzheimer's Disease"
+
 search_terms:
 - "Microglia"
 - "Amyloid Beta"

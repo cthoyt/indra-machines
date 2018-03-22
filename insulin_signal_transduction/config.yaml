@@ -1,8 +1,7 @@
 belief_threshold: 0.8
 
-#search_terms:
-#- "search term 1"
-#- "search term 2"
+ndex:
+	name: "Alzheimer's Disease - Insulin Signal Transduction"
 
 search_genes:
 - HMOX1

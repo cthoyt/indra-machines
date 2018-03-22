@@ -1,5 +1,8 @@
 belief_threshold: 0.8
 
+ndex:
+	name: "Anhedonia"
+
 search_terms:
 - Anhedonia
 - motivation

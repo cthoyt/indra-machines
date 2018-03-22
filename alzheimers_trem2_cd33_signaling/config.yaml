@@ -2,6 +2,9 @@ belief_threshold: 0.8
 
 search_terms_number_days: 7
 
+ndex:
+	name: "Alzheimer's Disease - TREM2 and CD33 Signaling"
+
 search_terms:
 - "inflammation"
 - "microglia"
