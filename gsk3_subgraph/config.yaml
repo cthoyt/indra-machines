@@ -3,6 +3,9 @@ belief_threshold: 0.8
 ndex:
   name: "Alzheimer's Disease - GSK3 Subgraph"
 
+search_terms:
+- GSK3B
+
 search_genes:
 - PSEN1
 - NFATC2

@@ -4,7 +4,7 @@ ndex:
   name: "Alzheimer's Disease - Tau Subgraph"
 
 search_terms:
-- "Tau"
+- tau
 
 search_genes:
 - CHI3L1
