@@ -1,7 +1,7 @@
 belief_threshold: 0.8
 
 ndex:
-	name: "Alzheimer's Disease - Insulin Signal Transduction"
+  name: "Alzheimer's Disease - Insulin Signal Transduction"
 
 search_terms:
 - insulin

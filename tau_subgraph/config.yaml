@@ -1,7 +1,10 @@
 belief_threshold: 0.8
 
 ndex:
-	name: "Alzheimer's Disease - Tau Subgraph"
+  name: "Alzheimer's Disease - Tau Subgraph"
+
+search_terms:
+- "Tau"
 
 search_genes:
 - CHI3L1

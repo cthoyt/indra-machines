@@ -1,7 +1,7 @@
 belief_threshold: 0.8
 
 ndex:
-	name: "Alzheimer's Disease - Inflammatory Response Subgraph"
+  name: "Alzheimer's Disease - Inflammatory Response Subgraph"
 
 search_genes:
 - TRAF6
