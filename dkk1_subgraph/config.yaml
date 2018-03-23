@@ -1,7 +1,7 @@
 belief_threshold: 0.8
 
 ndex:
-	name: "Alzheimer's Disease - DKK1 Subgraph"
+  name: "Alzheimer's Disease - DKK1 Subgraph"
 
 search_terms:
 - "WNT signaling"
