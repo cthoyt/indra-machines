@@ -6,12 +6,13 @@
 import logging
 import os
 
-from indra.tools.machine.machine import run_with_search_helper
+from indra.tools.machine.machine import run_with_search_helper, load_model, assemble_cx
+import pybel
 
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
-directory = os.path.dirname(os.path.realpath(__file__))
 
+directory = os.path.dirname(os.path.realpath(__file__))
 
 def main():
     """Runs the INDRA machine on all relevant subdirectories"""
@@ -29,6 +30,18 @@ def main():
         log.info('running in %s', absolute_subdirectory)
         # Use config=None so it looks in the subdirectory
         run_with_search_helper(absolute_subdirectory, config=None)
+        
+        
+        model = load_model(model_path)
+        stmts = model.get_statements()
+        # Output CX
+        cx_str = assemble_cx(stmts, name)
+        with open(os.path.join(absolute_subdirectory, 'output.cx'), 'w') as file:
+            print(cx_str, file=file)
+            
+        # Output BEL gpickle
+        bel_graph = pybel.from_indra_statements(stmts)
+        pybel.to_pickle(bel_graph, os.path.join(absolute_subdirectory, 'output.gpickle'))
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
