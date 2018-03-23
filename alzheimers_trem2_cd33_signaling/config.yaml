@@ -4,6 +4,7 @@ search_terms_number_days: 7
 
 ndex:
 	name: "Alzheimer's Disease - TREM2 and CD33 Signaling"
+	network: 662d76d3-2deb-11e8-b939-0ac135e8bacf
 
 search_terms:
 - "inflammation"

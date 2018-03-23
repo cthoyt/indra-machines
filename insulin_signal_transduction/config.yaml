@@ -3,6 +3,9 @@ belief_threshold: 0.8
 ndex:
 	name: "Alzheimer's Disease - Insulin Signal Transduction"
 
+search_terms:
+- insulin
+
 search_genes:
 - HMOX1
 - SLC2A2
