@@ -3,6 +3,8 @@ belief_threshold: 0.8
 ndex:
   name: "Anxiety"
 
+search_terms_num_days: 1
+
 search_terms:
 - Anxiety
 - stress
