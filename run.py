@@ -35,13 +35,16 @@ def main():
         default_config_fname = os.path.join(absolute_subdirectory, 'config.yaml')
         config = get_config(default_config_fname)
         ndex_cred = get_ndex_cred(config)
+        name = ndex_cred.get('name')
 
         model = load_model(absolute_subdirectory)
         stmts = model.get_statements()
+
         # Output CX
-        cx_str = assemble_cx(stmts, ndex_cred.get('name'))
-        with open(os.path.join(absolute_subdirectory, 'output.cx'), 'w') as file:
-            print(cx_str, file=file)
+        if name:
+            cx_str = assemble_cx(stmts, name)
+            with open(os.path.join(absolute_subdirectory, 'output.cx'), 'w') as file:
+                print(cx_str, file=file)
 
         # Output BEL gpickle
         bel_graph = pybel.from_indra_statements(stmts)
