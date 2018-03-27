@@ -35,7 +35,7 @@ def main():
         default_config_fname = os.path.join(absolute_subdirectory, 'config.yaml')
         config = get_config(default_config_fname)
         ndex_cred = get_ndex_cred(config)
-        name = ndex_cred.get('name')
+        name = ndex_cred.get('name') if ndex_cred is not None else None
 
         model = load_model(absolute_subdirectory)
         stmts = model.get_statements()
