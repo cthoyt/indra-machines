@@ -1,5 +1,8 @@
 belief_threshold: 0.8
 
+ndex:
+  name: "Amyotrophic Lateral Sclerosis"
+
 search_terms:
 - "ALS"
 - "Amyotrophic lateral sclerosis"
