@@ -19,7 +19,7 @@ def main():
     """Runs the INDRA machine on all relevant subdirectories"""
     log.info('beginning INDRA machine runner')
 
-    for subdirectory in os.listdir(directory):
+    for subdirectory in sorted(os.listdir(directory)):
         absolute_subdirectory = os.path.join(directory, subdirectory)
 
         if not os.path.isdir(absolute_subdirectory):
