@@ -10,7 +10,7 @@ import click
 
 from indra.tools.machine.machine import summarize_helper
 
-logging.getLogger('indra').setLevel(logging.WARNING)
+logging.getLogger('indra/rasmachine').setLevel(logging.WARNING)
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
 
