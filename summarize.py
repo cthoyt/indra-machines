@@ -10,7 +10,7 @@ import click
 
 from indra.tools.machine.machine import summarize_helper
 
-logging.getLogger('indra/rasmachine').setLevel(logging.WARNING)
+logging.getLogger('rasmachine').setLevel(logging.WARNING)
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
 
@@ -30,6 +30,7 @@ def main():
     log.info('beginning INDRA machine summarizer')
 
     for subdirectory in sorted(os.listdir(HERE)):
+        click.echo('Summarizing {}'.format(subdirectory))
         if not directory_is_indra_machine(subdirectory):
             continue
 
