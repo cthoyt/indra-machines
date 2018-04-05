@@ -11,6 +11,7 @@ import click
 from indra.tools.machine.machine import summarize_helper
 
 logging.getLogger('rasmachine').setLevel(logging.WARNING)
+logging.getLogger('graph_assembler').setLevel(logging.WARNING)
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
 
@@ -27,13 +28,12 @@ def directory_is_indra_machine(subdirectory):
 @click.command()
 def main():
     """Summarizes the INDRA machines in all relevant subdirectories"""
-    log.info('beginning INDRA machine summarizer')
-
     for subdirectory in sorted(os.listdir(HERE)):
-        click.echo('Summarizing {}'.format(subdirectory))
+
         if not directory_is_indra_machine(subdirectory):
             continue
 
+        click.echo('Summarizing {}'.format(subdirectory), color='red')
         summarize_helper(os.path.join(HERE, subdirectory))
 
 
