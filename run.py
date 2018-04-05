@@ -12,7 +12,7 @@ from indra.tools.machine.machine import assemble_cx, get_config, get_ndex_cred, 
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
 
-directory = os.path.dirname(os.path.realpath(__file__))
+HERE = os.path.dirname(os.path.realpath(__file__))
 
 
 def run_one(directory):
@@ -59,11 +59,10 @@ def main():
     """Runs the INDRA machine on all relevant subdirectories"""
     log.info('beginning INDRA machine runner')
 
-    for subdirectory in sorted(os.listdir(directory)):
-        run_one(os.path.join(directory, subdirectory))
+    for subdirectory in sorted(os.listdir(HERE)):
+        run_one(os.path.join(HERE, subdirectory))
 
 
 if __name__ == '__main__':
     logging.basicConfig(level=logging.INFO)
-
     main()
