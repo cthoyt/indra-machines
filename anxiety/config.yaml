@@ -2,6 +2,7 @@ belief_threshold: 0.8
 
 ndex:
   name: "Anxiety"
+  network: b69c04be-38c9-11e8-8695-0ac135e8bacf
 
 search_terms_num_days: 1
 
