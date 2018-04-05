@@ -8,8 +8,10 @@ import os
 
 import click
 
-from indra.tools.machine.machine import assemble_cx, get_config, get_ndex_cred, load_model
+from indra.tools.machine.machine import assemble_cx, get_config, load_model
 
+logging.getLogger('rasmachine').setLevel(logging.WARNING)
+logging.getLogger('graph_assembler').setLevel(logging.WARNING)
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
 
@@ -30,13 +32,15 @@ def export(directory):
     default_config_fname = os.path.join(directory, 'config.yaml')
     config = get_config(default_config_fname)
 
-    ndex_cred = get_ndex_cred(config)
+    ndex_cred = config.get('ndex')
     if not ndex_cred:
         return
 
     name = ndex_cred.get('name')
     if not name:
         return
+
+    click.echo('Exporting {}'.format(directory))
 
     model = load_model(directory)
     stmts = model.get_statements()
