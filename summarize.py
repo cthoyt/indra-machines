@@ -10,10 +10,18 @@ import click
 
 from indra.tools.machine.machine import summarize_helper
 
+logging.getLogger('indra').setLevel(logging.WARNING)
 log = logging.getLogger('indra-machines')
 log.setLevel(logging.INFO)
 
 HERE = os.path.dirname(os.path.realpath(__file__))
+
+
+def directory_is_indra_machine(subdirectory):
+    return (
+            os.path.exists(os.path.join(subdirectory, 'config.yaml')) and
+            os.path.exists(os.path.join(subdirectory, 'model.pkl'))
+    )
 
 
 @click.command()
@@ -22,6 +30,9 @@ def main():
     log.info('beginning INDRA machine summarizer')
 
     for subdirectory in sorted(os.listdir(HERE)):
+        if not directory_is_indra_machine(subdirectory):
+            continue
+
         summarize_helper(os.path.join(HERE, subdirectory))
 
 
