@@ -1,4 +1,4 @@
-belief_threshold: 0.8
+belief_threshold: 0.5
 
 ndex:
   name: "Anxiety"
