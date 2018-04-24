@@ -1,10 +1,10 @@
 belief_threshold: 0.8
 
 ndex:
-  name: "Fanconi Anemia"
-  #network: set after first upload to NDEx!
+  name: "Fanconi Anemia Machine"
+  network: e70090bc-47a5-11e8-a935-0ac135e8bacf
 
-search_terms_num_days: 1
+search_terms_num_days: 5
 
 search_terms:
 - "Fanconi Anemia"
