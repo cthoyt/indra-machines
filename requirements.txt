@@ -1,2 +1,4 @@
+requests
+ndex2
 indra[machine]
 pybel
