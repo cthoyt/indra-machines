@@ -1,0 +1,32 @@
+belief_threshold: 0.8
+
+ndex:
+  name: "Fanconi Anemia"
+  #network: set after first upload to NDEx!
+
+search_terms_num_days: 1
+
+search_terms:
+- "Fanconi Anemia"
+
+search_genes:
+- FANCA
+- FANCB
+- FANCC
+- BRCA2
+- FANCD2
+- FANCE
+- FANCF
+- FANCG
+- FANCI
+- BRIP1
+- FANCL
+- FANCM
+- PALB2
+- RAD51C
+- SLX4
+- ERCC4
+- RAD51
+- BRCA1
+- UBE2T
+- XRCC2
